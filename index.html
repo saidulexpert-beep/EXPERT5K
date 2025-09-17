@@ -1861,8 +1861,8 @@ const firebaseConfig = {
 
         window.shrRefLink = async function() {
             const refCode = usrData.referralCode; if (!refCode) return showAlert("Could not find referral code.");
-            const shareUrl = `http://t.me/GMAIL_SHOP_bot/shop?start=${refCode}`;
-            const shareText = `💖 Earn more by sharing! Use my referral code: ${refCode} to get an exclusive bonus. 💸 You get 20 Taka for every successful referral. Join now: ${shareUrl}`;
+            const shareUrl = `http://t.me/EXPERT5KBOT/OPEN?start=${refCode}`;
+            const shareText = `💖 Earn more by sharing! Use my referral code: ${refCode} to get an exclusive bonus. 💸 You get UNLIMITED Taka for every successful referral. Join now: ${shareUrl}`;
             if (navigator.share) {
                 try { await navigator.share({ title: 'Join & Earn!', text: shareText }); } catch (error) { if (error.name !== 'AbortError') copyToClipboard(shareText, 'Share failed, invite message copied!'); }
             } else { copyToClipboard(shareText, `🎉 Invite copied! Send to friends and earn 20 Taka per referral! 💸`); }
